@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex">
+    <style>body{margin:0}.move{position:fixed;width:100vw;height:100vh;top:0;background-color:#fff;transition:all ease 1s;z-index:2}.moveIn{position:absolute;width:3rem;height:3rem;margin:auto;background-color:#333;top:0;right:0;bottom:0;left:0;-webkit-animation-name:rota;animation-name:rota;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear}@-webkit-keyframes rota{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rota{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+
+    </style>
+    <script>let notLoadedCSS = 0;
+requestAnimationFrame(() => ['./concated.css'].forEach(href => {
+    notLoadedCSS++;
+    var l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = href;
+    console.log('l');
+    l.addEventListener('load', () => {
+        console.log(notLoadedCSS);
+        if (--notLoadedCSS === 0) {
+            document.dispatchEvent(new Event('allCSSLoaded'))
+            window.allCSSLoaded = true;
+        };
+    });
+    document.head.appendChild(l);
+}));
+    </script>
+    <title>デモページ</title>
+  </head>
+  <body>
+    <div class="move">
+      <div class="moveIn"></div>
+    </div>
+    <header>
+      <div>Title Or Logo</div>
+    </header>
+    <h1>about</h1>
+    <div>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら</div>
+    <ul>
+      <li>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/img.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/0.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/1.jpg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="border"></div>
+        <label>
+          <input type="checkbox">
+          <h2>遁げた山羊</h2>
+          <div>五月のしまいの日曜でした。わたくしは賑にぎやかな市の教会の鐘の音で眼をさましました。もう日はよほど登って、まわりはみんなきらきらしていました。</div>
+        </label>
+      </li>
+      <li>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/1.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/img.jpg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="border"></div>
+        <label>
+          <input type="checkbox">
+          <h2>つめくさのあかり</h2>
+          <div>それからちょうど十日ばかりたって、夕方、わたくしが役所から帰って両手でカフスをはずしていましたら、いきなりあのファゼーロが、戸口から顔を出しました。</div>
+        </label>
+      </li>
+      <li>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/img.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/img.jpg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="border"></div>
+        <label>
+          <input type="checkbox">
+          <h2>ポラーノの広場</h2>
+          <div>それからちょうど五日目の火曜日の夕方でした。その日はわたくしは役所で死んだ北極熊を剥製はくせいにするかどうかについてひどく仲間と議論をして大へんむしゃくしゃしていましたから、少し気を直すつもりで酒石酸しゅせきさんをつめたい水に入れて呑んでいましたら、ずうっと遠くですきとおった口笛が聞えました。</div>
+        </label>
+      </li>
+      <li>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/img.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/3.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/img.jpg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="border"></div>
+        <label>
+          <input type="checkbox">
+          <h2>警察署</h2>
+          <div>ところがその次の次の日のひるすぎでした。わたくしが役所の机で古い帳簿から写しものをしていますと給仕が来てわたくしの肩をつっついて、「所長さんがすぐ来いって。」と云いました。</div>
+        </label>
+      </li>
+      <li>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/img.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/0.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/3.jpg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="border"></div>
+        <label>
+          <input type="checkbox">
+          <h2>センダード市の毒蛾</h2>
+          <div>そしてだんだん暑くなってきました。役所では窓に黄いろな日覆ひおおいもできましたし隣りの所長の室には電気会社から寄贈になった直径七デシもある大きな扇風機も据すえつけられました。あまり暑い日の午後などは所長が自分で立って間の扉をあけて、「さあ諸君、少し風にあたりたまえ。」なんて云ったものです。</div>
+        </label>
+      </li>
+      <li>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/img.jpg">
+            </div>
+            <div class="swiper-slide">
+              <div class="loading">
+                <div class="loadingIn"></div>
+              </div><img src="./img/1.jpg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="border"></div>
+        <label>
+          <input type="checkbox">
+          <h2>風と草穂</h2>
+          <div>九月一日の朝わたくしは、旅程表やいろいろな報告を持って、きまった時間に役所に出ました。わたくしはみんなにも挨拶して廻り、所長が出て来るや否や、その扉をノックしてはいって行きました。</div>
+        </label>
+      </li>
+    </ul>
+    <footer><svg width="138mm" height="140mm" version="1.1" viewBox="0 0 138 140" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <defs> <clipPath id="clipPath3760"> <path d="m138 91.7a60.5 62.9 0 0 1 27.1 52.4 60.5 62.9 0 0 1-60.5 62.9 60.5 62.9 0 0 1-48-24.7 70.7 70.7 0 0 0 67.3 49.3 70.7 70.7 0 0 0 70.7-70.7 70.7 70.7 0 0 0-56.6-69.3z" stroke-width=".265"/> </clipPath> <clipPath id="clipPath3764"> <path d="m138 91.7a60.5 62.9 0 0 1 27.1 52.4 60.5 62.9 0 0 1-60.5 62.9 60.5 62.9 0 0 1-48-24.7 70.7 70.7 0 0 0 67.3 49.3 70.7 70.7 0 0 0 70.7-70.7 70.7 70.7 0 0 0-56.6-69.3z" stroke-width=".265"/> </clipPath> </defs> <metadata> <rdf:RDF> <cc:Work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/> <dc:title/> </cc:Work> </rdf:RDF> </metadata> <g transform="translate(-56.7 -91.7)" stroke-width=".265"> <circle cx="124" cy="161" r="70.7" clip-path="url(#clipPath3764)" fill="#4d4d4d"/> <circle cx="124" cy="161" r="70.7" clip-path="url(#clipPath3760)" fill="#ff0"/> </g></svg></footer>
+    <script src="./main.js" async></script>
+  </body>
+</html>
